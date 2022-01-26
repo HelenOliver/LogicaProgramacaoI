@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+	
+	var qtdFamilia = 1;
+	
+	var totalIdades = 0;
+	
+	while(qtdFamilia <= totalFamiliares){
+	
+		var idade = parseInt(prompt("Informe idade do familiar"));
+		totalIdades = totalIdades + idade;
+		qtdFamilia++;
+		
+	}
+	var mediaIdades = totalIdades/totalFamiliares;
+	mostra("A média das idades dois familiares é " + mediaIdades);
+	mostra("FIM");
+
+</script>

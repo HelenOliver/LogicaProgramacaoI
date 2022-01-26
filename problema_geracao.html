@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha(){
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function exibe(frase){
+	
+		document.write(frase);
+		pulaLinha();
+	}
+	
+		var qtdAnos = (2021 - 1500);
+		var qtdGeracao = (qtdAnos/28);
+		
+		exibe("Quantas gerações se passaram? " + Math.round(qtdGeracao));
+
+</script>
